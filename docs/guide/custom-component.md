@@ -1,6 +1,6 @@
 ---
 title: 小程序自定义组件
-order: 26
+order: 28
 ---
 
 Remax 允许你在 React 组件中引用小程序的自定义组件。
@@ -59,7 +59,6 @@ export default () => (
 
 不能在小程序自定义组件上使用 “Spread Attributes”。
 
-
 **错误：**
 
 ```js
@@ -79,7 +78,7 @@ export default () => {
       </Badge>
     </View>
   );
-}
+};
 ```
 
 **正确：**
@@ -97,5 +96,5 @@ export default () => {
       </Badge>
     </View>
   );
-}
+};
 ```
