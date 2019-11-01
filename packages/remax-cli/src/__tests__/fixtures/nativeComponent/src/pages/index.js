@@ -10,7 +10,7 @@ import PluginComponent2 from 'plugin://myPlugin/dddd';
 
 export default () => (
   <View>
-    <A />
+    <A foo="bar" />
     <B />
     <C />
     <D />
