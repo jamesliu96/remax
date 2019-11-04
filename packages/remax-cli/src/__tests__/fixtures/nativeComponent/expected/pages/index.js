@@ -1,7 +1,7 @@
-import propsAlias from '../npm/remax/esm/adapters/alipay/components/propsAlias.js';
 import '../npm/remax/esm/render.js';
 import { createElement } from 'react';
 import '../npm/remax/esm/createAppConfig.js';
+import '../npm/remax/esm/Platform.js';
 import createPageConfig from '../npm/remax/esm/createPageConfig.js';
 import '../npm/remax/esm/index.js';
 import View from '../npm/remax/esm/adapters/alipay/components/View.js';
@@ -48,43 +48,43 @@ var _page = function _page() {
 var index = Page(createPageConfig(_page));var A = function(props) {
         return createElement(
             'a-0',
-            propsAlias(props, true),
+            props,
             props.children
           );
         };var B = function(props) {
         return createElement(
             'b-1',
-            propsAlias(props, true),
+            props,
             props.children
           );
         };var C = function(props) {
         return createElement(
             'c-2',
-            propsAlias(props, true),
+            props,
             props.children
           );
         };var D = function(props) {
         return createElement(
             'd-3',
-            propsAlias(props, true),
+            props,
             props.children
           );
         };var Complex = function(props) {
         return createElement(
             'complex-4',
-            propsAlias(props, true),
+            props,
             props.children
           );
         };var PluginComponent = function(props) {
         return createElement(
             'my-plugin-5',
-            propsAlias(props, true),
+            props,
             props.children
           );
         };var PluginComponent2 = function(props) {
         return createElement(
             'my-plugin-6',
-            propsAlias(props, true),
+            props,
             props.children
           );
         };

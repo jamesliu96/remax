@@ -1,14 +1,23 @@
-const currentPlatform = process.env.REMAX_PLATFORM;
+type Platform = 'alipay' | 'wechat' | 'h5' | 'toutiao';
 
-type Platform = 'alipay' | 'wechat' | 'h5';
-
-const is = (platform: Platform) => currentPlatform === platform;
+const is = (platform: Platform) => process.env.REMAX_PLATFORM === platform;
 
 const Platform = {
-  current: currentPlatform,
-  isAlipay: is('alipay'),
-  isH5: is('h5'),
-  isWechat: is('wechat'),
+  get current() {
+    return process.env.REMAX_PLATFORM;
+  },
+  get isAlipay() {
+    return is('alipay');
+  },
+  get isH5() {
+    return is('h5');
+  },
+  get isWechat() {
+    return is('wechat');
+  },
+  get isToutiao() {
+    return is('toutiao');
+  },
 };
 
 export default Platform;
